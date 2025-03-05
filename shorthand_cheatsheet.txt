@@ -1,0 +1,15 @@
+__margin__
+margin: top _ right _ bottom _ left
+margin: top _ right/left _ bottom
+margin: top/bottom _ right/left
+
+
+__border__
+border-style: dotted _ dashed _ solid _ double _ groove _ ridge _ inset _ outset _ none _ hidden
+
+border-width: top _ right _ bottom _ left
+border-width: top _ right/left _ bottom
+border-width: top/bottom _ right/left
+
+border: width _ style _ color
+border-bottom: ...
