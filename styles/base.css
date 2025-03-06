@@ -37,14 +37,21 @@ p {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    padding: 1.5em;
+    margin: 2em 0;
 }
 
 
 .navigation a {
     text-decoration: none;
     color: var(--color_accent);
+    padding: .3em;
     font-size: 1.5em;
+}
+
+.navigation a:hover {
+    position: relative;
+    bottom: .2em;
+    border-bottom: .2em solid var(--color_text);
 }
 
 /* M A I N */
@@ -55,7 +62,7 @@ main {
 
 .card {
     border: 2px solid var(--color_accent);
-    margin: 1em;
+    margin: 0 1em;
     height: fit-content;
 }
 
@@ -69,7 +76,7 @@ main {
 
 /* A B O U T */
 .me {
-    display: inline-flex;
+    display: flex;
 }
 .me img {
     width: 10em;
@@ -116,4 +123,19 @@ main {
 .links a {
     text-decoration: none;
     color: var(--color_text);
+    padding: .5em;
+}
+
+.links a:hover {
+    border-left: .3em solid var(--color_background);
+}
+
+/* F O O T E R */
+footer {
+    margin: 1.5em;
+}
+footer p{
+    padding: .3em;
+    text-align: center;
+    font-size: 1em;
 }
