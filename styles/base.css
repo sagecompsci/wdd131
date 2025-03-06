@@ -58,11 +58,13 @@ p {
 main {
     display: grid;
     grid-template-columns: 5fr 2fr;
+    max-width: 90%;
+    margin: auto;
 }
 
 .card {
     border: 2px solid var(--color_accent);
-    margin: 0 1em;
+    margin: 0 .5em;
     height: fit-content;
 }
 
