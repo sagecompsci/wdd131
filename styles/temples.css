@@ -1,0 +1,113 @@
+:root {
+    --color_page: #101411;
+    --color_text: #F7EED5;
+    /*--color_text: #A59B88;*/
+    --color_accent: #AB905F;
+    --color_background: #454C43;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: var(--color_page);
+    color: var(--color_text);
+}
+
+h1, h2, h3, a {
+    font-family: "contrail one", arial, sans-serif;
+}
+
+h1 {
+    background-color: var(--color_background);
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+}
+
+p {
+    font-family: "kantumruy pro", "Times New Roman", sans-serif;
+    padding: 1em;
+    font-size: 1.3em;
+}
+
+
+/* N A V */
+
+.navigation {
+    display: none;
+    list-style: none;
+    margin: 2em 0;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--color_accent);
+    padding: .3em;
+    font-size: 1.5em;
+    align-self: center;
+    margin: .5em;
+}
+
+.navigation.open a:hover {
+    border-left: .2em solid var(--color_text);
+}
+
+.menu {
+    display: block;
+    text-decoration: none;
+    color: var(--color_accent);
+    padding: .3em;
+    font-size: 3em;
+}
+
+.menu::before {
+    content: '≡'
+}
+
+.menu.open::before {
+    content: '×'
+}
+
+
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    grid-column: 1 / -1;
+}
+
+figure {
+    place-self: center;
+}
+
+figcaption{
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin: 1em;
+}
+
+/* F O O T E R */
+footer {
+    margin: 1.5em;
+}
+footer p{
+    padding: .3em;
+    text-align: center;
+    font-size: 1em;
+}
