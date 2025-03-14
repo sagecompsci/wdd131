@@ -97,7 +97,7 @@ figcaption{
 }
 
 img {
-    width: 200px;
+    width: auto;
     height: auto;
     margin: 1em;
 }
