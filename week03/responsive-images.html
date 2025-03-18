@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Responsive images</title>
+        <meta name="description" content="responsive images example for wdd 131">
+        <meta name="author" content="Sage Reid">
+
+        <link rel="stylesheet" href="styles/responive-images.css">
+    </head>
+
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Logan Utah Temple" width="500" height="250">
+            </picture>
+        </div>
+    </main>
+</html>
