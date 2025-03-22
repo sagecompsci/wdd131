@@ -13,20 +13,42 @@
     </head>
 
     <body>
-        <header>
-            <h1>Madagascar</h1>
-        </header>
-
-        <main>
+        <h1>Madagascar</h1>
+        <main class="container">
             <picture>
-                <source srcset="">
-                <img src="" alt="" width="" height="">
+                <source srcset="images/madagascar_trees.webp" media="(min-width: 500px)">
+                <img src="images/madagascar_lemurs.webp" alt="Madagascar Image" width="100%" height="auto">
             </picture>
 
-            <div id="data">
-                <h2>Data</h2>
 
+            <div class="info" id="data">
+                <h2>Data</h2>
+                <ul>
+                    <li><span class="bold">Area:</span> 587,041 sq km</li>
+                    <li><span class="bold">Population:</span> 27,691,018</li>
+                    <li><span class="bold">Capital:</span> Antananarivo</li>
+                    <li><span class="bold">Languages:</span> Malagasy, French</li>
+                    <li><span class="bold">Currency:</span> Malagasy Ariary</li>
+                    <li><span class="bold">Time Zone:</span> UTC+3</li>
+                    <li><span class="bold">Calling Code:</span> +261</li>
+                    <li><span class="bold">Internet TLD:</span> .mg</li>
+                </ul>
+            </div>
+
+            <div class="info" id="weather">
+                <h2>Weather</h2>
+                <ul>
+                    <li><span class="bold">Temperature:</span> <span id="temp"></span> ℃</li>
+                    <li><span class="bold">Conditions:</span> Partly Cloudy</li>
+                    <li><span class="bold">Wind Speed:</span> <span id="speed"></span> km/h</li>
+                    <li><span class="bold">Wind Chill:</span> <span id="chill"></span> ℃</li>
+                </ul>
             </div>
         </main>
+
+        <footer>
+            <p>©<span id="currentyear"></span> | Sage Reid | Utah</p>
+            <p id="lastmodified"></p>
+        </footer>
     </body>
 </html>
