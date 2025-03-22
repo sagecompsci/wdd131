@@ -10,9 +10,10 @@
         <link rel="stylesheet" href="styles/place.css">
         <script src="scripts/getdates.js" defer></script>
         <script src="scripts/place.js" defer></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
     </head>
 
     <body>
@@ -44,10 +45,7 @@
 
             <div class="info" id="weather">
                 <h2>Weather</h2>
-                <picture>
-                    <source srcset="//:0" media="(min-width: 500px)">
-                    <img src="images/cloud.svg" width="500" height="500" alt="">
-                </picture>
+                <img src="images/cloud.svg" width="500" height="500" alt="">
                 <ul>
                     <li><span class="bold">Temperature:</span> <span id="temp"></span> ℃</li>
                     <li><span class="bold">Conditions:</span> Partly Cloudy</li>
