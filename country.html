@@ -3,17 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Place</title>
-        <meta name="description" content="place webpage for wdd 131">
+        <title>Country Page | Sage Reid | WDD 131</title>
+        <meta name="description" content="country page for wdd 131">
         <meta name="author" content="Sage Reid">
 
-        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/country.css">
         <script src="scripts/getdates.js" defer></script>
-        <script src="scripts/place.js" defer></script>
+        <script src="scripts/country.js" defer></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>
     </head>
 
     <body>
-        <h1>Madagascar</h1>
+        <header>
+            <h1>Madagascar</h1>
+        </header>
         <main class="container">
             <div class="hero">
                 <picture>
@@ -39,6 +44,10 @@
 
             <div class="info" id="weather">
                 <h2>Weather</h2>
+                <picture>
+                    <source srcset="//:0" media="(min-width: 500px)">
+                    <img src="images/cloud.svg" width="500" height="500" alt="">
+                </picture>
                 <ul>
                     <li><span class="bold">Temperature:</span> <span id="temp"></span> ℃</li>
                     <li><span class="bold">Conditions:</span> Partly Cloudy</li>

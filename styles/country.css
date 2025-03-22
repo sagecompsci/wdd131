@@ -12,6 +12,18 @@
     padding: 0;
 }
 
+main {
+    position: relative;
+}
+
+h1, h2 {
+    font-family: "contrail one", arial, sans-serif;
+}
+
+p, li{
+    font-family: "kantumruy pro", "Times New Roman", sans-serif;
+}
+
 
 img {
     width: 100%;
@@ -45,12 +57,13 @@ h1 {
     padding: .5em;
 }
 
-#weather h2::before {
-    content: "⛅  "
-}
-
 .bold {
     font-weight: bold;
+}
+
+#weather img {
+    width: 5em;
+    height: auto;
 }
 
 
@@ -76,6 +89,17 @@ footer {
         top: var(--weather_pos);
         right: var(--offset)
     }
+
+    #weather h2::after {
+        content: "  ⛅"
+    }
+
+    #weather img {
+        width: 0;
+        height: 0;
+
+    }
+
     .info h2 {
         position: relative;
         right: 1.5em;
