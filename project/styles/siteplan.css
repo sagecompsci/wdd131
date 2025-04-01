@@ -1,0 +1,21 @@
+:root {
+    --color_page: #FBF8EF;
+    --color_text: #1C0504;
+    --color_accent: #84A49C;
+    --color_accent2: #CF473E;
+}
+
+html {
+    background-color: var(--color_page);
+    color: var(--color_text);
+}
+
+h1 {
+    background-color: var(--color_accent);
+    padding: 1em;
+    font-family: "wendy one", "arial", "sans-serif";
+}
+
+p {
+    font-family: "jetbrains mono", "Times New Roman", "sans-serif";
+}
