@@ -36,6 +36,9 @@ products.forEach(product => {
 
 });
 
+
+// HELP--------------------------------------------------------------------------
+
 const hi = document.querySelector("#hi");
 
 let numVisits = localStorage.getItem("numberOfVisits");
