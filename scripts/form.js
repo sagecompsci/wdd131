@@ -35,3 +35,13 @@ products.forEach(product => {
     productID.appendChild(option)
 
 });
+
+const hi = document.querySelector("#hi");
+
+let numVisits = localStorage.getItem("numberOfVisits");
+
+hi.innerHTML = `testing ${numVisits}`;
+
+numVisits++;
+
+localStorage.setItem("numberOfVisits", numVisits);
