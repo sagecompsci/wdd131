@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>Forms Practice</title>
+        <meta name="description" content="HTML forms practice for wdd131">
+        <meta name="author" content="Sage Reid">
+
+        <link rel="stylesheet" href="styles/form.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/form.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Contrail+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        
+        <main>
+            <form method="get" action="review.html" class="form1">
+                <label>Product Name
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Choose a Product</option>
+                </select></label>
+
+                <div>Overall Rating</div>
+                <label><input type="radio" name="start" id="1" value="1" required>⭐</label>
+                <label><input type="radio" name="start" id="2" value="2" required>⭐⭐</label>
+                <label><input type="radio" name="start" id="3" value="3" required>⭐⭐⭐</label>
+                <label><input type="radio" name="start" id="4" value="4" required>⭐⭐⭐⭐</label>
+                <label><input type="radio" name="start" id="5" value="5" required>⭐⭐⭐⭐⭐</label>
+
+                <label>Date of Installation<input type="date" name="date" id="date" required></label>
+
+                <div>Which features did you find useful in the product? (Check all that apply)</div>
+                <label><input type="checkbox" name="features" id="durability" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" id="ease" value="ease">Ease of Use</label>
+                <label><input type="checkbox" name="features" id="performance" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" id="design" value="design">Design</label>
+
+                <label>Written Review (Optional)<textarea name="textArea" id="textArea"></textarea></label>
+
+                <label>Your Name (Optional)<input type="text" name="name" id="name" value="name"></label>
+
+                <input type="submit" value="Post Review">
+            </form>
+
+
+        </main>
+        
+        <footer>
+            <p>©<span id="currentyear"></span> | Sage Reid | Utah</p>
+            <p id="lastmodified"></p>
+        </footer>
+    </body>
+</html>

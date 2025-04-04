@@ -1,0 +1,63 @@
+:root {
+    --color_page: #101411;
+    --color_text: #F7EED5;
+    --color_accent: #AB905F;
+    --color_background: #454C43;
+}
+
+html {
+    background-color: var(--color_page);
+    color: var(--color_text);
+    font-size: 1.2em;
+}
+
+header, footer {
+    background-color: var(--color_background);
+    color: var(--color_accent);
+    padding: 1rem;
+}
+
+.form1 {
+    margin: 1rem 2rem;
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.form1 input:not([type="radio"], [type="checkbox"]),
+.form1 select,
+.form1 textarea{
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px
+
+}
+
+.form input[type="radio"],[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.form1 input[type="submit"]{
+    border: none;
+    font-size: 1.1em;
+    background-color: var(--color_accent);
+    color: var(--color_page);
+    padding: .5rem;
+    margin: 1rem;
+}
+
+
+.review {
+    margin: 4rem 2rem;
+}
