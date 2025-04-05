@@ -26,25 +26,11 @@ const products = [
   }
 ];
 
-const productID = document.querySelector("#product")
+const productId = document.querySelector(".product");
 
 products.forEach(product => {
-    let option = document.createElement("option")
+    let option = document.createElement("option");
     option.value = product.name;
     option.innerHTML = product.name;
-    productID.appendChild(option)
-
+    productId.appendChild(option);
 });
-
-
-// HELP--------------------------------------------------------------------------
-
-const hi = document.querySelector("#hi");
-
-let numVisits = localStorage.getItem("numberOfVisits");
-
-hi.innerHTML = `testing ${numVisits}`;
-
-numVisits++;
-
-localStorage.setItem("numberOfVisits", numVisits);

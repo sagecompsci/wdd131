@@ -13,7 +13,7 @@ html {
 
 header, footer {
     background-color: var(--color_background);
-    color: var(--color_accent);
+    color: var(--color_text);
     padding: 1rem;
 }
 
