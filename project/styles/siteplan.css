@@ -19,3 +19,7 @@ h1 {
 p {
     font-family: "jetbrains mono", "Times New Roman", "sans-serif";
 }
+
+div {
+    margin-top: 3em;
+}
