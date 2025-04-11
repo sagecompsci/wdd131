@@ -29,7 +29,7 @@ function load() {
 
 }
 
-if (localStorage.length === 0){
+if (localStorage.length < 1){
     localStorage.setItem("2", "");
 }
 
