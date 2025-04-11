@@ -1,4 +1,3 @@
-// get dates
 const year = new Date();
 
 const copyright = document.querySelector("#copyright");
@@ -7,7 +6,6 @@ const modified = document.querySelector("#modified");
 copyright.innerHTML = `${year.getFullYear()}`;
 modified.innerHTML = `Last Modified: ${document.lastModified}`;
 
-// display out cats page
 const cats = [
     {
         name: "Korra",
@@ -180,54 +178,6 @@ function displayCount(catList) {
 
     count.innerHTML = `${display}`
 }
-
-
-// saves form information to local storage
-const saveForm = document.querySelector(".saveForm");
-const submit = document.querySelector(".submit");
-
-let name = document.querySelector("#name");
-let email = document.querySelector("#email");
-let reason = document.querySelector("#reason");
-let message = document.querySelector("#message");
-
-let saved;
-
-function reset() {
-    saveForm.value = "Save Form";
-}
-
-function save() {
-    saved = true;
-    localStorage.setItem("name", name.value);
-    localStorage.setItem("email", email.value);
-    localStorage.setItem("reason", reason.value);
-    localStorage.setItem("message", message.value);
-    saveForm.value = "Saved";
-    setTimeout(reset, 5000);
-}
-
-function clear(){
-    localStorage.clear();
-    reason.value = "default";
-    saved = false;
-}
-
-function load() {
-    if (saved){
-        name.value = localStorage.getItem("name");
-        email.value = localStorage.getItem("email");
-        reason.value = localStorage.getItem("reason");
-        message.value = localStorage.getItem("message");
-        saveForm.value = "working";
-    }
-}
-
-
-window.onload = function () {
-    load();
-}
-
 
 displayCats(cats);
 displayCount(cats);

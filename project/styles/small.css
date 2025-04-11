@@ -4,6 +4,7 @@
     --color_accent: #9fb8b1;
     --color_accent2: #CF473E;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +22,6 @@ html {
     background-color: var(--color_page);
     color: var(--color_text);
 }
-
 
 .heading {
     display: grid;
@@ -50,7 +50,7 @@ html {
     margin: 1em;
 }
 
-.nav-bar nav{
+.nav-bar nav {
     top: 1em;
     display: flex;
     font-size: 25px;
@@ -59,7 +59,7 @@ html {
 }
 
 .nav-bar a:hover,
-.active{
+.active {
     position: relative;
     bottom: .3em;
     border-bottom: .3em solid var(--color_accent2);
@@ -164,7 +164,6 @@ footer {
 }
 
 
-
 .form1 {
     margin: auto;
     width: 400px;
@@ -179,7 +178,7 @@ footer {
 
 .form1 input,
 .form1 select,
-.form1 textarea{
+.form1 textarea {
     display: block;
     padding: .75rem;
     width: 100%;
@@ -192,10 +191,80 @@ footer {
 }
 
 .form1 input[type="submit"],
-.form1 input[type="button"]{
+.form1 input[type="button"] {
     margin: .8rem 0;
 }
 
-.form1 input[type="submit"]{
+.form1 input[type="submit"] {
     font-size: 1.2rem;
 }
+
+.confirmed {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.confirmed h2,
+.confirmed p {
+    margin: 2em;
+}
+
+
+.confirmed img {
+    width: 300px;
+    place-self: center;
+    margin: 1rem;
+}
+
+.confirmed a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    margin: 1em;
+}
+
+
+
+
+
+
+/*.navigation {*/
+/*    display: none;*/
+/*    list-style: none;*/
+/*    margin: 2em 0;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.navigation.open {*/
+/*    display: flex;*/
+/*}*/
+
+/*.navigation a {*/
+/*    text-decoration: none;*/
+/*    color: var(--color_accent);*/
+/*    padding: .3em;*/
+/*    font-size: 1.5em;*/
+/*    align-self: center;*/
+/*    margin: .5em;*/
+/*}*/
+
+/*.navigation.open a:hover {*/
+/*    border-left: .2em solid var(--color_text);*/
+/*}*/
+
+/*.menu {*/
+/*    display: block;*/
+/*    text-decoration: none;*/
+/*    color: var(--color_accent);*/
+/*    padding: .3em;*/
+/*    font-size: 3em;*/
+/*}*/
+
+/*.menu::before {*/
+/*    content: '≡'*/
+/*}*/
+
+/*.menu.open::before {*/
+/*    content: '×'*/
+/*}*/

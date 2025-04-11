@@ -7,8 +7,9 @@
         <meta name="description" content="Contact Us | Reid's Cat Adoption Shelter">
         <meta name="author" content="Sage Reid">
 
-        <link rel="stylesheet" href="styles/base.css">
-        <script src="scripts/base.js" defer></script>
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <script src="scripts/local-storage.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,6 @@
                 <nav>
                     <a href="index.html">Home</a>
                     <a  href="our-cats.html">Our Cats</a>
-                    <a href="#">Adoption</a>
                     <a class="active" href="contact-us.html">Contact Us</a>
                 </nav>
             </div>
@@ -54,8 +54,8 @@
 
                     <label>Message<textarea name="text-area" id="message" placeholder="Enter Message Here" required></textarea></label>
 
-                    <input class="saveForm" onclick="save()" type="button" value="Save Form">
-                    <input onclick="clear()" class="submit" type="submit" value="Send Request">
+                    <input class="saveForm" type="button" value="Save Form">
+                    <input class="submit" type="submit" value="Send Request">
 
                 </form>
             </div>
