@@ -29,6 +29,10 @@ function load() {
 
 }
 
+if (localStorage.length === 0){
+    localStorage.setItem("2", "");
+}
+
 window.onload = function () {
     load();
 }
