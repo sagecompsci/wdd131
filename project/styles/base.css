@@ -13,7 +13,7 @@ h1, h2, h3, .nav-bar a {
     font-family: "wendy one", "arial", "sans-serif";
 }
 
-p {
+p, label {
     font-family: "jetbrains mono", "Times New Roman", "sans-serif";
 }
 
@@ -45,6 +45,7 @@ html {
 }
 
 
+
 .nav-bar {
     margin: 1em;
 }
@@ -57,7 +58,8 @@ html {
     height: 2em;
 }
 
-.nav-bar a:hover {
+.nav-bar a:hover,
+.active{
     position: relative;
     bottom: .3em;
     border-bottom: .3em solid var(--color_accent2);
@@ -126,6 +128,74 @@ footer {
     background-color: var(--color_accent);
     color: var(--color_accent2);
     padding: 1em;
-    margin-top: -4px;
 
+}
+
+.our-cats {
+    width: 80%;
+    margin: auto;
+}
+
+.count-display {
+    text-align: left;
+    margin: 1.5em;
+}
+
+.card {
+    margin: 1em;
+    border: .5em solid var(--color_accent);
+    border-radius: .5em;
+    display: flex;
+}
+
+.card img {
+    width: 11rem;
+    height: auto;
+    margin: 1em;
+}
+
+.text {
+    text-align: center;
+    margin: 1em;
+}
+
+.text p {
+    margin: 1em;
+}
+
+
+
+.form1 {
+    margin: auto;
+    width: 400px;
+}
+
+.form1 label {
+    display: block;
+    padding-top: 1em;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.form1 input,
+.form1 select,
+.form1 textarea{
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.form1 textarea {
+    height: 7rem;
+}
+
+.form1 input[type="submit"],
+.form1 input[type="button"]{
+    margin: .8rem 0;
+}
+
+.form1 input[type="submit"]{
+    font-size: 1.2rem;
 }

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us | Reid's Cat Adoption Shelter</title>
+        <meta name="description" content="Contact Us | Reid's Cat Adoption Shelter">
+        <meta name="author" content="Sage Reid">
+
+        <link rel="stylesheet" href="styles/base.css">
+        <script src="scripts/base.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Wendy+One&display=swap" rel="stylesheet"     >
+    </head>
+
+    <body>
+        <header>
+            <div class="heading">
+                <img src="images/cat_logo.webp" alt="logo">
+                <h1>Reid's Cat Adoption Shelter</h1>
+            </div>
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a  href="our-cats.html">Our Cats</a>
+                    <a href="#">Adoption</a>
+                    <a class="active" href="contact-us.html">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div>
+
+                <form method="get" action="confirmed.html" class="form1">
+                    <label>Name<input type="text" name="name" id="name" placeholder="Enter Full Name" required></label>
+                    <label>Email<input type="email" name="email" id="email" placeholder="Enter Email Address" required></label>
+
+                    <label>Reason for Contacting<select name="reason" id="reason" class="reason" required>
+                        <option value="default" selected disabled>Select a reason</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="adoption">Questions About Adoption</option>
+                        <option value="surrendering">Surrendering a Cat</option>
+                        <option value="volunteering">Volunteering Opportunities</option>
+                        <option value="donations">Donations & Sponsorship</option>
+                        <option value="found">Lost or Found Cat</option>
+                        <option value="fostering">Fostering a Cat</option>
+                        <option value="events">Events or Partnership</option>
+                        <option value="website">Website Feedback</option>
+                        <option value="other">Other</option>
+                    </select></label>
+
+                    <label>Message<textarea name="text-area" id="message" placeholder="Enter Message Here" required></textarea></label>
+
+                    <input class="saveForm" onclick="save()" type="button" value="Save Form">
+                    <input onclick="clear()" class="submit" type="submit" value="Send Request">
+
+                </form>
+            </div>
+
+            <form class="popup">
+
+            </form>
+        </main>
+
+        <footer>
+            <p>©<span id="copyright"></span> | Sage Reid | Utah</p>
+            <p id="modified">Last Modified: </p>
+        </footer>
+    </body>
+</html>
