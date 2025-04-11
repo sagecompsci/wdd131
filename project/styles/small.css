@@ -2,6 +2,7 @@
     --color_page: #FBF8EF;
     --color_text: #1C0504;
     --color_accent: #9fb8b1;
+    --color_h1: #661810;
     --color_accent2: #CF473E;
 }
 
@@ -14,7 +15,7 @@ h1, h2, h3, .nav-bar a {
     font-family: "wendy one", "arial", "sans-serif";
 }
 
-p, label {
+p, label, a {
     font-family: "jetbrains mono", "Times New Roman", "sans-serif";
 }
 
@@ -25,9 +26,9 @@ html {
 
 .heading {
     display: grid;
-    grid-template-columns: 1fr  2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     padding: 1em;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     background-color: var(--color_accent);
 }
 
@@ -39,40 +40,55 @@ html {
 }
 
 .heading h1 {
-    color: var(--color_accent2);
+    color: var(--color_h1);
     font-size: 40px;
     place-self: center;
 }
 
-
-
 .nav-bar {
-    margin: 1em;
+    display: none;
+    list-style: none;
+    margin: 2em 0;
+    flex-direction: column;
 }
 
-.nav-bar nav {
-    top: 1em;
+.nav-bar.open {
     display: flex;
-    font-size: 25px;
-    justify-content: space-around;
-    height: 2em;
 }
 
-.nav-bar a:hover,
-.active {
+.nav-bar a:hover, .active {
     position: relative;
-    bottom: .3em;
-    border-bottom: .3em solid var(--color_accent2);
+    left: .3em;
+    border-left: .3em solid var(--color_accent2);
 }
+
 
 .nav-bar a {
     text-decoration: none;
     color: var(--color_text);
+    display: block;
+    padding: .3em;
+    font-size: 1.5em;
+    align-self: center;
+    margin: .5em;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+
+.menu {
+    display: block;
+    text-decoration: none;
+    color: var(--color_accent);
+    padding: .3em;
+    font-size: 3em;
+}
+
+.menu::before {
+    content: '≡'
+}
+
+.menu.open::before {
+    content: '×'
 }
 
 
@@ -82,7 +98,7 @@ html {
 
 .info-main {
     padding: .9em;
-    grid-row: span 3;
+    /*grid-row: span 3;*/
     place-self: center;
     border: 4px solid var(--color_accent);
 }
@@ -111,7 +127,7 @@ html {
     padding: 1em;
     color: var(--color_text);
     margin: 1em;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     position: absolute;
     top: 0;
     border-bottom: .2em solid var(--color_accent2);
@@ -126,18 +142,17 @@ html {
 footer {
     text-align: center;
     background-color: var(--color_accent);
-    color: var(--color_accent2);
+    color: var(--color_h1);
     padding: 1em;
 
 }
 
-.our-cats {
-    width: 80%;
-    margin: auto;
+.our-cats h2{
+    text-align: center;
+    margin-top: 2em;
 }
-
 .count-display {
-    text-align: left;
+    text-align: center;
     margin: 1.5em;
 }
 
@@ -145,13 +160,22 @@ footer {
     margin: 1em;
     border: .5em solid var(--color_accent);
     border-radius: .5em;
-    display: flex;
 }
 
 .card img {
     width: 11rem;
     height: auto;
-    margin: 1em;
+    display: block;
+    margin: 1em auto;
+}
+
+.top {
+    color: var(--color_text);
+    text-decoration: none;
+    display: block;
+    margin: 2em;
+    width: 100%;
+    text-align: center;
 }
 
 .text {
@@ -199,9 +223,13 @@ footer {
     font-size: 1.2rem;
 }
 
+.form1 input:required:invalid,
+.form1 textarea:required:invalid,
+.form1 select:required:invalid{
+    border: 2px solid var(--color_accent2);
+}
+
 .confirmed {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
@@ -212,9 +240,9 @@ footer {
 
 
 .confirmed img {
-    width: 300px;
+    width: 90%;
     place-self: center;
-    margin: 1rem;
+    margin: 1em auto;
 }
 
 .confirmed a {
@@ -229,42 +257,4 @@ footer {
 
 
 
-/*.navigation {*/
-/*    display: none;*/
-/*    list-style: none;*/
-/*    margin: 2em 0;*/
-/*    flex-direction: column;*/
-/*}*/
 
-/*.navigation.open {*/
-/*    display: flex;*/
-/*}*/
-
-/*.navigation a {*/
-/*    text-decoration: none;*/
-/*    color: var(--color_accent);*/
-/*    padding: .3em;*/
-/*    font-size: 1.5em;*/
-/*    align-self: center;*/
-/*    margin: .5em;*/
-/*}*/
-
-/*.navigation.open a:hover {*/
-/*    border-left: .2em solid var(--color_text);*/
-/*}*/
-
-/*.menu {*/
-/*    display: block;*/
-/*    text-decoration: none;*/
-/*    color: var(--color_accent);*/
-/*    padding: .3em;*/
-/*    font-size: 3em;*/
-/*}*/
-
-/*.menu::before {*/
-/*    content: '≡'*/
-/*}*/
-
-/*.menu.open::before {*/
-/*    content: '×'*/
-/*}*/

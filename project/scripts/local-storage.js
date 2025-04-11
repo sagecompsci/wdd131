@@ -24,7 +24,9 @@ function load() {
     for (let i = 0; i < inputs.length; i++) {
         let item = inputs[i];
         item.value = localStorage.getItem(`${i}`);
+        console.log(localStorage.getItem(`${i}`));
     }
+
 }
 
 window.onload = function () {

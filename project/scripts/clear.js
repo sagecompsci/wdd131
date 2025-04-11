@@ -1,6 +1,6 @@
 function clear(){
     localStorage.clear();
-    localStorage.setItem("reason", "default");
+    localStorage.setItem("2", "");
 }
 
-clear()
+clear();

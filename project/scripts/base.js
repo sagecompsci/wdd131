@@ -1,3 +1,4 @@
+// Copyright and last modified
 const year = new Date();
 
 const copyright = document.querySelector("#copyright");
@@ -6,6 +7,16 @@ const modified = document.querySelector("#modified");
 copyright.innerHTML = `${year.getFullYear()}`;
 modified.innerHTML = `Last Modified: ${document.lastModified}`;
 
+// Menu
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('.nav-bar');
+
+menu.addEventListener('click', function(){
+    nav.classList.toggle('open');
+    menu.classList.toggle('open');
+});
+
+// Cats page
 const cats = [
     {
         name: "Korra",

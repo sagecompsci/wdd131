@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
         <script src="scripts/local-storage.js" defer></script>
+        <script src="scripts/base.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +23,7 @@
                 <img src="images/cat_logo.webp" alt="logo">
                 <h1>Reid's Cat Adoption Shelter</h1>
             </div>
+            <a class="menu" href="#"></a>
             <div class="nav-bar">
                 <nav>
                     <a href="index.html">Home</a>
@@ -39,7 +41,7 @@
                     <label>Email<input type="email" name="email" id="email" placeholder="Enter Email Address" required></label>
 
                     <label>Reason for Contacting<select name="reason" id="reason" class="reason" required>
-                        <option value="default" selected disabled>Select a reason</option>
+                        <option value="" selected disabled>Select a reason</option>
                         <option value="general">General Inquiry</option>
                         <option value="adoption">Questions About Adoption</option>
                         <option value="surrendering">Surrendering a Cat</option>
